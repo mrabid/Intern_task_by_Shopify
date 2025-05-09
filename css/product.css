@@ -1,0 +1,578 @@
+/* Product Section Styles */
+.product-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Product Gallery */
+.product-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.main-image {
+    width: 100%;
+}
+
+.main-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 0;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.thumbnail-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.thumbnail {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 0;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.thumbnail.active {
+    border-color: #ff4444;
+}
+
+/* Product Info */
+.product-info {
+    padding: 1.25rem 1rem;
+    font-size: 1rem;
+}
+
+.product-info h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.stars {
+    color: #ffd700;
+}
+
+.review-count {
+    color: #666;
+}
+
+.product-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 1.5rem;
+}
+
+.pricing {
+    margin-bottom: 1.1rem;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #999;
+    margin-right: 1rem;
+    font-size: 1.1rem;
+}
+
+.discounted-price {
+    color: #ff4444;
+    font-size: 1.35rem;
+    font-weight: bold;
+}
+
+/* Quantity Selector */
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    margin-bottom: 0;
+}
+
+.quantity-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background: #f6f8fa;
+    color: #223;
+    font-size: 1.25rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s;
+    box-shadow: none;
+    margin: 0;
+}
+
+.quantity-btn:active {
+    background: #e0e4ea;
+}
+
+#quantity {
+    width: 54px;
+    height: 40px;
+    text-align: center;
+    border: none;
+    background: transparent;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #223;
+    outline: none;
+    pointer-events: none;
+    margin: 0 0.25rem;
+    letter-spacing: 1px;
+}
+
+/* Add to Cart Button */
+.add-to-cart-row {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.2rem;
+}
+
+.add-to-cart-btn {
+    width: auto;
+    min-width: 180px;
+    padding: 0.9rem 2.2rem;
+    background: #22b573;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.15rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    box-shadow: none;
+}
+
+.add-to-cart-btn:hover {
+    background: #45a049;
+    transform: translateY(-2px);
+}
+
+.add-to-cart-btn:active {
+    transform: translateY(0);
+}
+
+/* Trust Badges */
+.trust-badges {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    justify-content: center;
+}
+
+.trust-badges img {
+    height: 40px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.trust-badges img:hover {
+    opacity: 1;
+}
+
+/* Payment Methods */
+.payment-methods {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    justify-content: center;
+    padding: 1rem;
+    border-top: 1px solid #eee;
+}
+
+.payment-methods img {
+    height: 24px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.payment-methods img:hover {
+    opacity: 1;
+}
+
+/* Product Badges */
+.product-badges {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.badge {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.badge i {
+    color: #4CAF50;
+}
+
+/* Professional Design Section */
+.professional-design {
+    background: #1a1a1a;
+    color: white;
+    padding: 4rem 2rem;
+    margin-top: 4rem;
+}
+
+.design-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.product-render {
+    position: relative;
+}
+
+.product-render img {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.2));
+}
+
+.features h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.feature-list {
+    list-style: none;
+}
+
+.feature-list li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.feature-list i {
+    color: #4CAF50;
+    font-size: 1.2rem;
+}
+
+/* Product Options */
+.product-options {
+    margin: 1.5rem 0;
+}
+
+.option-group {
+    margin-bottom: 1rem;
+}
+
+.option-group label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.color-options, .size-options {
+    display: flex;
+    gap: 1rem;
+}
+
+.color-option, .size-option {
+    cursor: pointer;
+    position: relative;
+}
+
+.color-option input, .size-option input {
+    position: absolute;
+    opacity: 0;
+}
+
+.color-swatch {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.color-option input:checked + .color-swatch {
+    border-color: #ff4444;
+    transform: scale(1.1);
+}
+
+.color-name {
+    display: block;
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+    text-align: center;
+}
+
+.size-option .size-name {
+    display: block;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.size-option input:checked + .size-name {
+    background: #ff4444;
+    color: white;
+    border-color: #ff4444;
+}
+
+.color-option:hover .color-swatch,
+.size-option:hover .size-name {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero Review Block */
+.hero-review {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    padding: 1.5rem 1.25rem 1.25rem 1.25rem;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+.hero-review > div:first-child {
+    gap: 0.75rem;
+    margin-bottom: 0.25rem;
+}
+.hero-review span[style*='Best Seller'] {
+    font-size: 0.95rem !important;
+    padding: 0.18rem 0.6rem !important;
+}
+.hero-review span[style*='font-size: 2.2rem'] {
+    font-size: 1.5rem !important;
+    margin-bottom: 0.5rem !important;
+}
+.hero-review blockquote,
+.hero-review > div[style*='background: #f6f8fa'] {
+    font-size: 1rem !important;
+    padding: 0.75rem 1rem !important;
+    margin-bottom: 1rem !important;
+}
+.hero-review ul {
+    max-width: 100%;
+    font-size: 0.98rem;
+}
+.hero-review li {
+    font-size: 0.98rem !important;
+    padding-bottom: 0.4rem !important;
+    margin-bottom: 0.4rem !important;
+}
+
+/* Product Highlights */
+.product-highlights {
+    margin-bottom: 1rem !important;
+}
+.product-highlights ul {
+    font-size: 0.97rem;
+}
+.product-highlights li {
+    margin-bottom: 0.35rem !important;
+}
+
+/* Bank Cards */
+.bank-cards {
+    gap: 0.5rem !important;
+    margin: 0.75rem 0 1.25rem 0 !important;
+}
+.bank-cards img {
+    height: 28px !important;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .product-section {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 1rem;
+    }
+    .product-info {
+        padding: 1rem 0.5rem;
+    }
+    .hero-review {
+        padding: 1rem 0.5rem 1rem 0.5rem;
+    }
+}
+@media (max-width: 600px) {
+    .product-section {
+        padding: 0.5rem;
+    }
+    .product-info {
+        padding: 0.5rem 0.25rem;
+        font-size: 0.97rem;
+    }
+    .hero-review {
+        padding: 0.5rem 0.25rem 0.5rem 0.25rem;
+        font-size: 0.97rem;
+    }
+    .main-image img {
+        border-radius: 6px;
+    }
+    .product-gallery {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 0.5rem;
+        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    }
+    .thumbnail-row {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+        width: auto;
+        min-width: 44px;
+        max-width: 56px;
+        order: 0;
+    }
+    .main-image {
+        flex: 1 1 0;
+        width: 100%;
+        margin-left: 0.5rem;
+        order: 1;
+    }
+    .thumbnail {
+        width: 44px;
+        height: 44px;
+        aspect-ratio: 1/1;
+        border-radius: 0;
+        object-fit: cover;
+    }
+    .main-image img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1/1;
+        border-radius: 0;
+        object-fit: cover;
+    }
+    .bank-cards img {
+        height: 22px !important;
+    }
+}
+@media (max-width: 900px) {
+    .product-section {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 0.5rem;
+        max-width: 100vw;
+    }
+    .product-gallery,
+    .product-info {
+        max-width: 100%;
+        width: 100%;
+        min-width: 0;
+        padding: 0;
+    }
+    .main-image,
+    .main-image img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1/1;
+        border-radius: 0;
+    }
+    .thumbnail-row {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.15rem;
+    }
+    .thumbnail {
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 1/1;
+        border-radius: 0;
+    }
+    .product-info {
+        padding: 0.5rem 0.25rem;
+        font-size: 0.97rem;
+    }
+    .hero-review {
+        padding: 0 0 1rem 0;
+        margin-bottom: 1rem;
+    }
+    .hero-review div[style*='font-size: 2.2rem'] {
+        font-size: 1.2rem !important;
+    }
+    .hero-review img {
+        width: 28px !important;
+        height: 28px !important;
+    }
+    .hero-review ul li {
+        font-size: 0.95rem !important;
+    }
+    .add-to-cart-row {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.7rem;
+        margin-bottom: 1rem;
+    }
+    .add-to-cart-btn {
+        min-width: unset;
+        width: 100%;
+        padding: 0.9rem 0;
+        font-size: 1rem;
+    }
+    .quantity-selector {
+        justify-content: center;
+        gap: 0.5rem;
+    }
+    .quantity-btn {
+        width: 36px;
+        height: 36px;
+        font-size: 1.1rem;
+    }
+    #quantity {
+        width: 44px;
+        height: 36px;
+        font-size: 1.1rem;
+    }
+    .bank-cards {
+        flex-wrap: wrap;
+        gap: 0.3rem !important;
+        justify-content: flex-start;
+    }
+    .bank-cards img {
+        height: 18px !important;
+        margin-bottom: 0.2rem;
+    }
+    .product-info-lines {
+        font-size: 0.97rem;
+    }
+} 

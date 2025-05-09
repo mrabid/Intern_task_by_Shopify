@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helio Pet Device™ - Red Light Therapy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/reviews.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="nav-container">
+            <div class="logo">
+                <span class="shopify-logo">Shopify</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#story">Our Story</a></li>
+                <li><a href="#science">Science</a></li>
+                <li><a href="#results">Results</a></li>
+            </ul>
+            <div class="nav-icons">
+                <button class="icon-btn" id="cartBtn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </button>
+                
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="product-section">
+            <div class="product-gallery">
+                <div class="main-image">
+                    <img src="assets/1.png" alt="Woman using Helio Pet Device on dog" id="mainProductImage">
+                </div>
+                <div class="thumbnail-row">
+                    <img src="assets/2.png" alt="Product thumbnail 1" class="thumbnail active">
+                    <img src="assets/3.png" alt="Product thumbnail 2" class="thumbnail">
+                    <img src="assets/4.png" alt="Product thumbnail 3" class="thumbnail">
+                    <img src="assets/5.png" alt="Product thumbnail 4" class="thumbnail">
+                </div>
+            </div>
+
+            <div class="product-info">
+                <!-- Begin Hero Review Block -->
+                <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 0.25rem; margin-bottom: 0.5rem;">
+                    <span style="background: #ff4444; color: #fff; font-weight: 600; border-radius: 8px; padding: 0.25rem 0.75rem; font-size: 1rem; letter-spacing: 1px;">Best Seller</span>
+                    <span style="display: flex; align-items: center; gap: 0.25rem; font-size: 0.98rem; color: #222; margin-top: 0.15rem;">
+                        <span style="color: #FFD700; font-size: 1.1rem;">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </span>
+                        <span style="font-weight: 600;">4.9</span>
+                        <span style="color: #888;">(1,021 reviews)</span>
+                    </span>
+                </div>
+                <div style="font-size: 2.2rem; font-weight: 700; color: #222; margin-bottom: 1rem;">Helio Pet Device™</div>
+                <div style="background: #f6f8fa; border-radius: 12px; padding: 1rem 1.25rem; margin-bottom: 1.25rem; display: flex; flex-direction: column; align-items: flex-start;">
+                    <img src="assets/6.jpg" alt="Profile" style="width: 36px; height: 36px; border-radius: 50%; object-fit: cover; flex-shrink: 0; margin-bottom: 0.5rem;">
+                    <div style="font-size: 1rem; color: #444; width: 100%;">
+                        "We are BOTH so THANKFUL! I purchased this for my 12 year old Lab mix as he's got mobility issues with the back legs. It's been 3 weeks and already a difference!"
+                    </div>
+                </div>
+                <ul style="list-style: none; padding: 0; margin: 0;">
+                    <li style="display: flex; align-items: center; gap: 0.5rem; color: #000; font-size: 1rem; margin-bottom: 0.5rem; border-bottom: 1px solid #e0e0e0; padding-bottom: 0.5rem;">
+                        <i class="fas fa-check" style="color: #1a73e8;"></i>Reduce aches & pains with 5-minute sessions.
+                    </li>
+                    <li style="display: flex; align-items: center; gap: 0.5rem; color: #000; font-size: 1rem; margin-bottom: 0.5rem; border-bottom: 1px solid #e0e0e0; padding-bottom: 0.5rem;">
+                        <i class="fas fa-check" style="color: #1a73e8;"></i>Cold Laser Therapy helps with Pain, Inflammation & more.
+                    </li>
+                    <li style="display: flex; align-items: center; gap: 0.5rem; color: #000; font-size: 1rem;">
+                        <i class="fas fa-check" style="color: #1a73e8;"></i>Professional Grade LLLT with 5 Laser Diodes.
+                    </li>
+                </ul>
+                <!-- End Hero Review Block -->
+
+                <div class="pricing">
+                    <span class="original-price">$369.00</span>
+                    <span class="discounted-price">$249.99</span>
+                </div>
+                <div class="add-to-cart-row">
+                    <button class="add-to-cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        Add to Cart
+                    </button>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" value="1" min="1" id="quantity">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                </div>
+                
+                <div class="bank-cards" style="display: flex; gap: 0.75rem; align-items: center; margin: 1rem 0;">
+                    <img src="assets/Bank/amex.png" alt="Amex" style="height:32px;">
+                    <img src="assets/Bank/visa.png" alt="Visa" style="height:32px;">
+                    <img src="assets/Bank/paynoeer.png" alt="Payoneer" style="height:32px;">
+                    <img src="assets/Bank/paypal.png" alt="PayPal" style="height:32px;">
+                    <img src="assets/Bank/discover.png" alt="Discover" style="height:32px;">
+                    <img src="assets/Bank/afterpay.png" alt="Afterpay" style="height:32px;">
+                </div>
+                <div class="product-info-lines" style="margin-bottom: 1rem;">
+                    <div style="font-size: 1rem; font-weight: 500; margin-bottom: 0.25rem; display: flex; align-items: center;">
+                        <img src="assets/lucide_shield-check.png" alt="Money back icon" style="width: 1rem; height: 1rem; margin-right: 0.5rem;">
+                        <span style="color: hsl(210, 100%, 61%);">30 day money back </span>&nbspguarantee
+                    </div>
+                    <div style="font-size: 1rem; font-weight: 500; display: flex; align-items: center;">
+                        <img src="assets/carbon_delivery-parcel.png" alt="Delivery icon" style="width: 1rem; height: 1rem; margin-right: 0.5rem;">
+                        Expected<span style="color: hsl(210, 100%, 61%);">&nbspdelivery in 2-4 </span> &nbspbusiness days
+                    </div>
+                </div>
+                
+                
+            </div>
+        </section>
+
+        <section class="professional-design">
+            <div class="design-content">
+                <div class="product-render">
+                    <img src="assets/product-render.png" alt="Product 3D Render">
+                </div>
+                <div class="features">
+                    <h2>Professional Features</h2>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Advanced LED Technology</li>
+                        <li><i class="fas fa-check"></i> Multiple Treatment Modes</li>
+                        <li><i class="fas fa-check"></i> Pet-Safe Design</li>
+                        <li><i class="fas fa-check"></i> Long Battery Life</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews-section">
+            <h2>Customer Reviews</h2>
+            <div class="reviews-summary">
+                <div class="average-rating">
+                    <div class="big-rating">4.5</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="total-reviews">Based on 128 reviews</div>
+                </div>
+                <div class="rating-distribution">
+                    <div class="rating-bar">
+                        <span>5 stars</span>
+                        <div class="bar"><div class="fill" style="width: 75%"></div></div>
+                        <span>75%</span>
+                    </div>
+                    <div class="rating-bar">
+                        <span>4 stars</span>
+                        <div class="bar"><div class="fill" style="width: 15%"></div></div>
+                        <span>15%</span>
+                    </div>
+                    <div class="rating-bar">
+                        <span>3 stars</span>
+                        <div class="bar"><div class="fill" style="width: 5%"></div></div>
+                        <span>5%</span>
+                    </div>
+                    <div class="rating-bar">
+                        <span>2 stars</span>
+                        <div class="bar"><div class="fill" style="width: 3%"></div></div>
+                        <span>3%</span>
+                    </div>
+                    <div class="rating-bar">
+                        <span>1 star</span>
+                        <div class="bar"><div class="fill" style="width: 2%"></div></div>
+                        <span>2%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reviews-list">
+                <!-- Reviews will be dynamically loaded here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Helio Pet Device™. All rights reserved.</p>
+    </footer>
+
+    <!-- Modal for image preview -->
+    <div class="modal" id="imageModal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <!-- Cart Drawer -->
+    <div id="cartOverlay" class="cart-overlay"></div>
+    <div id="cartDrawer" class="cart-drawer">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-content">
+            <!-- Cart items will be dynamically inserted here -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span class="total-amount">$0.00</span>
+            </div>
+            <button class="checkout-btn">
+                Proceed to Checkout
+            </button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/product.js"></script>
+    <script src="js/reviews.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html> 
